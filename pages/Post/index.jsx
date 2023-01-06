@@ -18,7 +18,8 @@ function Post() {
         contents_tmp.push(<>
             <h2>{titre}</h2>
             <p>{creationDate}</p>
-            {/* <p>{new Date(creationDate)}</p> */}
+            {// <p>{new Date(creationDate)}</p> 
+            }
             <img src={imageUrl} alt={titre} />
             <p>{contenu}</p>
         </>)

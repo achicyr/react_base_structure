@@ -74,12 +74,14 @@ export default function Login({path}) {
     console.log(user);
     return (
         <FormStyled onSubmit={handleSubmit}>
-            <label htmlFor="email')">Pseudonyme
-            </label>
+            <fieldset>
+                <label htmlFor="email">Pseudonyme</label>
                 <input type="text" id="email" name="email" />
-            <label htmlFor="password">Mot de passe
-            </label>
+            </fieldset>
+            <fieldset>
+                <label htmlFor="password">Mot de passe</label>
                 <input type="password" id="password" name="password" />
+            </fieldset>
             <button>{path}</button>
             
             { path == "login" && goSignin && <><p>{goSignin}</p><Link to={'/signup'+pathBack}>S'enregistrer ?</Link></>}

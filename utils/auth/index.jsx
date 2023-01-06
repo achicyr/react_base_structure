@@ -15,6 +15,10 @@ export const AuthProvider = ({ children }) => {
             console.log(contents);
             setDatas(contents)
         })
+        .catch(err=>{
+            console.group(err)
+            console.groupEnd()
+        })
 	}, [])
 
     return (
